@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "author": "satahippy <satahippy@gmail.com>",
   "license": "MIT",
+  "main": "dist/main.js",
   "scripts": {
     "dist": "node_modules/.bin/webpack --config webpack.dist.config.js",
     "test": "node_modules/.bin/mocha test/ --compilers js:babel-core/register"
