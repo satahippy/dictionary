@@ -1,0 +1,16 @@
+{
+  "name": "sata-dictionary",
+  "version": "0.0.1",
+  "author": "satahippy <satahippy@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dist": "node_modules/.bin/webpack --config webpack.dist.config.js",
+    "test": "node_modules/.bin/mocha test/ --compilers js:babel-core/register"
+  },
+  "devDependencies": {
+    "webpack": "~1.12",
+    "babel-loader": "~5.3",
+    "mocha": "~2.3",
+    "babel-core": "~5.0"
+  }
+}
