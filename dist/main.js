@@ -63,11 +63,13 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	"use strict";
 
+	var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
 	});
-
-	var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -79,13 +81,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	            dictionaries[_key] = arguments[_key];
 	        }
 
-	        this.dictionary = Object.assign.apply(Object, [{}].concat(dictionaries));
+	        this.dictionary = _extends.apply(undefined, [{}].concat(dictionaries));
 	    }
 
 	    _createClass(Dictionary, [{
 	        key: "merge",
 	        value: function merge(dictionary) {
-	            Object.assign(this.dictionary, dictionary);
+	            _extends(this.dictionary, dictionary);
 	        }
 	    }, {
 	        key: "get",
@@ -97,8 +99,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	    return Dictionary;
 	})();
 
-	exports["default"] = Dictionary;
-	module.exports = exports["default"];
+	exports.default = Dictionary;
+	module.exports = exports['default'];
 
 /***/ }
 /******/ ])

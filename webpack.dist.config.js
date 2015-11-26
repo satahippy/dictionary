@@ -15,8 +15,12 @@ module.exports = {
 		loaders: [
 			{
 				test: /\.js$/,
-				loaders: ["babel"],
-				exclude: /node_modules/
+				loader: "babel",
+				exclude: /node_modules/,
+				query: {
+					presets: ["es2015"],
+					plugins: ["add-module-exports", "transform-object-assign"]
+				}
 			}
 		]
 	}
