@@ -6,7 +6,7 @@ Just a dictionary with items that you can override.
 # Example
 
 ```js
-var Dictionary = require('./dist/main');
+var Dictionary = require('sata-dictionary');
 
 var dic = new Dictionary({
 	'word1': 'default word1',
